@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +12,9 @@
             margin: 0;
             padding: 20px;
             color: #1f2933;
-            line-height: 30px;
+            line-height: 35px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
         }
 
         h1 {
@@ -26,9 +29,14 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
 
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
+            min-width: 500px;
             margin-top: 10px;
         }
 
@@ -37,6 +45,20 @@
             border: 1px solid #e5e7eb;
             padding: 8px;
             text-align: left;
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+
+        th:first-child,
+        td:first-child {
+            width: 150px;
+            min-width: 120px;
+        }
+
+        th:last-child,
+        td:last-child {
+            width: auto;
+            min-width: 300px;
         }
 
         th {
@@ -49,40 +71,44 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Present Simple</h1>
 
     <section>
         <h2>Form</h2>
 
-        <table>
-            <tr>
-                <th>Type</th>
-                <th>Structure</th>
-            </tr>
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Structure</th>
+                </tr>
 
-            <tr>
-                <td><b>Statement</b></td>
-                <td><b>(I / You / We / They)</b> + Verb <br> <b>(He / She / It)</b> + Verb + (s / es)</td>
-            </tr>
+                <tr>
+                    <td><b>Statement</b></td>
+                    <td><b>(I / You / We / They)</b> + Verb <br> <b>(He / She / It)</b> + Verb + (s / es)</td>
+                </tr>
 
-            <tr>
-                <td><b>Negative</b></td>
-                <td><b>(I / You / We / They)</b> + don't (do not) + Verb <br> <b>(He / She / It)</b> + doesn't (does not) + Verb</td>
-            </tr>
+                <tr>
+                    <td><b>Negative</b></td>
+                    <td><b>(I / You / We / They)</b> + don't (do not) + Verb <br> <b>(He / She / It)</b> + doesn't (does
+                        not) + Verb</td>
+                </tr>
 
-            <tr>
-                <td><b>Question</b></td>
-                <td>Do + <b>(I / you / we / they)</b> + Verb? <br> Does + <b>(he / she / it)</b> + Verb?</td>
-            </tr>
-        </table>
+                <tr>
+                    <td><b>Question</b></td>
+                    <td>Do + <b>(I / you / we / they)</b> + Verb? <br> Does + <b>(he / she / it)</b> + Verb?</td>
+                </tr>
+            </table>
+        </div>
     </section>
 
     <section>
         <h2>Expressions</h2>
 
         <h3>Common Adverbs of Frequency</h3>
-        
+
         <ul>
             <li>always</li>
             <li>usually</li>
@@ -158,7 +184,7 @@
 
     <section>
         <h2>Helpful Hint</h2>
-        
+
         <p>Adverbs of frequency usually come <strong>BEFORE</strong> the main verb, but <strong>AFTER</strong> the verb
             "to be".</strong></p>
 
@@ -171,4 +197,5 @@
         </ul>
     </section>
 </body>
+
 </html>

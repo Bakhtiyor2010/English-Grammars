@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,8 +11,10 @@
             background: #f4f6f8;
             margin: 0;
             padding: 20px;
+            line-height: 35px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
             color: #1f2933;
-            line-height: 30px;
         }
 
         h1 {
@@ -26,9 +29,14 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
 
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
+            min-width: 500px;
             margin-top: 10px;
         }
 
@@ -37,6 +45,20 @@
             border: 1px solid #e5e7eb;
             padding: 8px;
             text-align: left;
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+
+        th:first-child,
+        td:first-child {
+            width: 150px;
+            min-width: 120px;
+        }
+
+        th:last-child,
+        td:last-child {
+            width: auto;
+            min-width: 430px;
         }
 
         th {
@@ -49,33 +71,45 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Past Continuous</h1>
 
     <section>
         <h2>Form</h2>
 
-        <table>
-            <tr>
-                <th>Type</th>
-                <th>Structure</th>
-            </tr>
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Structure</th>
+                </tr>
 
-            <tr>
-                <td>Statement</td>
-                <td><b>(I / He / She / It)</b> + was + Verb + ing <br> <b>(You / We / They)</b> were + Verb + ing</td>
-            </tr>
+                <tr>
+                    <td>Statement</td>
+                    <td>
+                        <b>(I / He / She / It)</b> + was + verb <sub>ing</sub> <br> 
+                        <b>(You / We / They)</b> were + verb <sub>ing</sub>
+                    </td>
+                </tr>
 
-            <tr>
-                <td>Negative</td>
-                <td><b>(I / He / She / It)</b> + wasn't (was not) + Verb + ing <br> <b>(You / We / They)</b> + weren't (were not) + Verb + ing</td>
-            </tr>
+                <tr>
+                    <td>Negative</td>
+                    <td>
+                        <b>(I / He / She / It)</b> + wasn't (was not) + verb <sub>ing</sub> <br> 
+                        <b>(You / We / They)</b> + weren't (were not) + verb <sub>ing</sub>
+                    </td>
+                </tr>
 
-            <tr>
-                <td>Question</td>
-                <td>Was + <b>(I / He / She / It)</b> + Verb + ing? <br> Were + <b>(You / We / They)</b> + Verb + ing?</td>
-            </tr>
-        </table>
+                <tr>
+                    <td>Question</td>
+                    <td>
+                        Was + <b>(I / he / she / it)</b> + verb <sub>ing</sub>? <br> 
+                        Were + <b>(you / we / they)</b> + verb <sub>ing</sub>?
+                    </td>
+                </tr>
+            </table>
+        </div>
     </section>
 
     <section>
@@ -138,4 +172,5 @@
         </ul>
     </section>
 </body>
+
 </html>

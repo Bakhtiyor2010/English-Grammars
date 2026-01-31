@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,8 +11,10 @@
             background: #f4f6f8;
             margin: 0;
             padding: 20px;
+            line-height: 35px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
             color: #1f2933;
-            line-height: 30px;
         }
 
         h1 {
@@ -26,9 +29,14 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
 
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
+            min-width: 500px;
             margin-top: 10px;
         }
 
@@ -37,6 +45,20 @@
             border: 1px solid #e5e7eb;
             padding: 8px;
             text-align: left;
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+
+        th:first-child,
+        td:first-child {
+            width: 150px;
+            min-width: 120px;
+        }
+
+        th:last-child,
+        td:last-child {
+            width: auto;
+            min-width: 600px;
         }
 
         th {
@@ -49,34 +71,39 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Used To</h1>
 
     <section>
         <h2>Form</h2>
 
-        <table>
-            <tr>
-                <th>Type</th>
-                <th>Structure</th>
-            </tr>
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Structure</th>
+                </tr>
 
-            <tr>
-                <td>Statement</td>
-                <td><b>(I / You / We / They / He / She / It)</b> + used to + Verb</td>
-            </tr>
+                <tr>
+                    <td>Statement</td>
+                    <td><b>(I / You / We / They / He / She / It)</b> + used to + verb</td>
+                </tr>
 
-            <tr>
-                <td>Negative</td>
-                <td><b>(I / You / We / They / He / She / It)</b> + didn’t (did not) + use to + Verb <br> <b>(I / You /
-                        We / They / He / She / It)</b> + never + used to + Verb</td>
-            </tr>
+                <tr>
+                    <td>Negative</td>
+                    <td>
+                        <b>(I / You / We / They / He / She / It)</b> + didn’t (did not) + use to + verb <br> 
+                        <b>(I / You / We / They / He / She / It)</b> + never + used to + verb
+                    </td>
+                </tr>
 
-            <tr>
-                <td>Question</td>
-                <td>Did + <b>(I / You / We / They / He / She / It)</b> + use to + Verb?</td>
-            </tr>
-        </table>
+                <tr>
+                    <td>Question</td>
+                    <td>Did + <b>(I / you / we / they / he / she / it)</b> + use to + verb?</td>
+                </tr>
+            </table>
+        </div>
     </section>
 
     <section>
@@ -103,4 +130,5 @@
         </ul>
     </section>
 </body>
+
 </html>
